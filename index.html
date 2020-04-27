@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCB建融家园资产管理展示</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=XmXZN97UzWWUiYOcUvCeKUK12zeAW5E8"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- 全国页面开始 -->
+    <!-- 营销指标开始 -->
+    <div class="pageHead"></div>
+    <div class="yxFrame">
+        <div class="yxTop">
+            <span class="yxDoubleSlashBig1"></span>
+            <span class="yxTopic1">集中式项目签约数量</span>
+            <span class="yxDoubleSlashBig2"></span>
+            <div class="yxTopic2">已开业门店数</div>
+            <div class="yxNumber1">00000</div>
+            <span class="yxText1">套</span>
+            <div class="yxNumber2">00000</div>
+            <sapn class="yxText2">个</sapn>
+            <div class="yxUnderline1"></div>
+            <div class="yxUnderline2"></div>
+        </div>
+        <div class="yxLeft">
+            <div class="container1">
+                <span class="yxArrow1"></span>
+                <span class="yxTopic3">项目总览</span>
+                <span class="yxDoubleSlashsmall1"></span>
+                <span class="yxtopic1">签约项目数</span>
+                <span class="yxDoubleSlashsmall2"></span>
+                <span class="yxtopic2">签约房源数</span>
+                <div class="yxNum1">000365</div>
+                <span class="yxtext1">个</span>
+                <div class="yxNum2">000865</div>
+                <sapn class="yxtext2">个</sapn>
+                <div class="yxunderline1"></div>
+                <div class="yxunderline2"></div>
+            </div>
+            <div class="container2">
+                <span class="yxDoubleSlashsmall3"></span>
+                <span class="yxtopic3">储备项目数</span>
+                <span class="yxDoubleSlashsmall4"></span>
+                <span class="yxtopic4">储备房源数</span>
+                <div class="yxNum3">000365</div>
+                <span class="yxtext3">个</span>
+                <div class="yxNum4">000865</div>
+                <sapn class="yxtext4">个</sapn>
+                <div class="yxunderline3"></div>
+                <div class="yxunderline4"></div>
+            </div>   
+        </div>
+
+        <div class="yxRight">
+            <div class="container1">
+                    <span class="yxArrow2"></span>
+                    <div class="yxTopic4">
+                        <ul>
+                            <li>无资产项目</li>
+                            <li>购买租赁权项目</li>
+                            <li>购买所有权项目</li>
+                            <li>受托运营项目</li>
+                            <li>无资产项目</li>
+                        </ul>
+                    </div>
+                    <span class="yxDoubleSlashsmall5"></span>
+                    <span class="yxtopic5">签约项目数</span>
+                    <span class="yxDoubleSlashsmall6"></span>
+                    <span class="yxtopic6">签约房源数</span>
+                    <div class="yxNum5">00365</div>
+                    <span class="yxtext5">个</span>
+                    <div class="yxNum6">00865</div>
+                    <sapn class="yxtext6">个</sapn>
+                    <div class="yxunderline5"></div>
+                    <div class="yxunderline6"></div>
+            </div>
+            <div class="container2">
+                <span class="yxDoubleSlashsmall7"></span>
+                <span class="yxtopic7">储备项目数</span>
+                <span class="yxDoubleSlashsmall8"></span>
+                <span class="yxtopic8">储备房源数</span>
+                <div class="yxNum7">00365</div>
+                <span class="yxtext7">个</span>
+                <div class="yxNum8">00865</div>
+                <sapn class="yxtext8">个</sapn>
+                <div class="yxunderline7"></div>
+                <div class="yxunderline8"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 营销指标结束 -->
+
+    <!-- 拓展指标开始 -->
+    <div class="tzFrame">
+        <div class="tzTop">
+            <div class="tzArrow1"></div>
+            <div class="tzTopic1">区域平台对接数量</div>
+            <div id="tzContainer" style="width: 500px;height: 230px;"></div>
+        </div>
+        <div class="tzBottom">
+            <div class="tzArrow2"></div>
+            <div class="tzTopic2">母行赋能主要指标</div>
+            <ul class="app1">
+                <li id="tzContainer1"></li>
+                <li id="tzContainer2"></li>
+                <li id="tzContainer3"></li>
+                <li id="tzContainer4"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 拓展指标结束 -->
+
+    <!-- 效益指标开始 -->
+    <div class="xyFrame">
+        <div class="xyLeft">
+            <div class="xyLeftTop">
+                <div class="xyArrow1"></div>
+                <div class="xyTopic1">区域实现收入</div>
+                <div id="xyContainer"></div>
+                <div class="xyLeftTopNum1"></div>
+                <div class="xyLeftTopNum2"></div>
+                <div class="xyLeftTopNum3"></div>
+            </div>
+            <div class="xyLeftBottom">
+                <div class="xyArrow2"></div>
+                <div class="xyTopic2">区域确认成本</div>
+                <div id="xyContainer2"></div>
+                <div class="xyLeftBottomNum1"></div>
+                <div class="xyLeftBottomNum2"></div>
+                <div class="xyLeftBottomNum3"></div>
+            </div>
+        </div>
+        <div class="xyRight">
+            <div class="xyRightTop">
+                <div class="xyArrow3"></div>
+                <div class="xyTopic3">区域实际已投资（万元）</div>
+                <ul class="xynumber1">
+                    <li>0</li>
+                    <li>7</li>
+                    <li>9</li>
+                    <li>7</li>
+                    <li>2</li>
+                    <li>0</li>
+                </ul>
+            </div>
+            <div class="xyRightCenter">
+                <div class="xyArrow4"></div>
+                <div class="xyTopic4">区域授信总额度（万元）</div>
+                <ul class="xynumber2">
+                        <li>6</li>
+                        <li>8</li>
+                        <li>1</li>
+                        <li>0</li>
+                        <li>0</li>
+                        <li>0</li>
+                </ul>
+            </div>
+            <div class="xyRightBottom">
+                <div class="xyArrow5"></div>
+                <div class="xyTopic5">区域贷款余额（万元）</div>
+                <ul class="xynumber3">
+                        <li>1</li>
+                        <li>7</li>
+                        <li>3</li>
+                        <li>7</li>
+                        <li>0</li>
+                        <li>4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 效益指标结束 -->
+
+    <!-- 运营指标开始 -->
+    <div class="yyFrame">
+        <div class="yyTop1">
+            <span class="yyDoubleSlashBig1"></span>
+            <div class="yyTopic1">
+                <ul>
+                    <li>集中式可运营房源</li>
+                    <li>集中式已出租房源</li>
+                    <li>集中式可运营房源</li>
+                </ul>
+            </div>
+            <span class="yyDoubleSlashBig2"></span>
+            <div class="yyTopic2">
+                <ul>
+                    <li>可运营房源总量</li>
+                    <li>实点平均租金</li>
+                    <li>可运营房源总量</li>
+                </ul>
+            </div>
+            <div class="yyNumber1">008030</div>
+            <span class="yyText1">套</span>
+            <div class="yyNumber2">020060</div>
+            <div class="yyText2">
+                <ul>
+                   <li>套</li>
+                   <li>元</li>
+                   <li>套</li>
+                </ul>
+            </div>
+            <div class="yyUnderline1"></div>
+            <div class="yyUnderline2"></div>
+        </div>
+        <div class="yyTop2">
+            <div class="yyArrow1"></div>
+            <div class="yyTopic3">
+                <ul>
+                    <li>在线签约</li>
+                    <li>在线交易</li>
+                    <li>在线签约</li>
+                </ul>
+            </div>
+            <div id ="yyContainer"></div>
+        </div>
+        <div class="yyCenter">
+            <div class="yyCenterLeft">
+                <div class="yyArrow2"></div>
+                <div class="yyTopic4">
+                    <ul>
+                        <li>集中式静态出租率</li>
+                        <li>在线静态出租率</li>
+                        <li>集中式静态出租率</li>
+                    </ul>
+                </div>
+                <div class="yymabiao1">
+                    <div class="yyzhizheng1"></div>
+                </div>
+                <span class="yypercent1">96%</span>
+            </div>
+            <div class="yyCenterRight">
+                <div class="yyArrow3"></div>
+                <div class="yyTopic5">用户画像</div>
+                <!-- <div class="yymabiao2">
+                    <div class="yyzhizheng2"></div>
+                </div>
+                <span class="yypercent2">71%</span> -->
+                <div id="yyCenterRightContainer"></div>
+            </div>
+        </div>
+        <div class="yyBottomContainer">
+            <div class="flip">
+                    <div class="yyBottom">
+                        <div class="yyArrow4"></div>
+                        <div class="yyTopic6">项目进度</div>
+                        <div class="yyProgress1">
+                            <div class="progress1"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="geshu1">32个</div>
+                        <div class="yyProgress2">
+                            <div class="progress2"></div>
+                             <div class="round"></div> 
+                        </div>
+                        <div class="geshu2">19个</div>
+                        <div class="yyProgress3">
+                            <div class="progress3"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="geshu3">01个</div>
+                        <div class="yyProgress4">
+                            <div class="progress4"></div>
+                             <div class="round"></div>
+                        </div>
+                        <div class="geshu4">59个</div>
+                        <div class="yyProgress5">
+                            <div class="progress5"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="geshu5">12个</div>
+                        <div class="yyProgress6">
+                            <div class="progress6"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="geshu6">16个</div>
+                        <div class="yyProgress7">
+                            <div class="progress7"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="geshu7">16个</div>
+                        <div class="yyProgress8">
+                            <div class="progress8"></div>
+                            <div class="round"></div>
+                        </div>
+                        <div class="geshu8">00个</div>
+                    </div>
+                    <div class="yyBottomList">
+                        <div class="yyBottomArea">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- 运营指标结束 -->
+
+    <!-- 全国地图开始 -->
+    <div class="nationWideMap">
+        <div class="beijing">北京</div>
+        <div class="tianjin">天津</div>
+        <div class="hebei">河北</div>
+        <div class="shandong">山东</div>
+        <div class="shanxi">山西</div>
+        <div class="henan">河南</div>
+        <div class="jiangsu">江苏</div>
+        <div class="anhui">安徽</div>
+        <div class="hubei">湖北</div>
+        <div class="zhejiang">浙江</div>
+        <div class="shanghai">上海</div>
+        <div class="jiangxi">江西</div>
+        <div class="chongqing">重庆</div>
+        <div class="hunan">湖南</div>
+        <div class="fujian">福建</div>
+        <div class="yunnan">云南</div>
+        <div class="guangxi">广西</div>
+        <div class="guangdong">广东</div>
+        <div class="shanxi1">陕西</div>
+        <div class="sichuan">四川</div>
+    </div>
+    <!-- 全国地图结束 -->
+
+    <!-- 全国页面结束 -->
+
+
+    <!-- 省市页面开始 -->
+    <!-- 资金状况开始 -->
+
+    <div class="investFrame" style="display: none;">
+        <div class="investNum1">006398</div>
+        <div class="investNum2">003258</div>
+        <div class="investNum3">023276</div>
+        <div class="investNum4">002269</div>
+        <div class="investNum5">255452</div>
+    </div>
+    <!-- 资金状况结束 -->
+
+    <!-- 收入指标开始 -->
+
+    <div class="incomeFrame" style="display: none;">
+        <div class="incomeMoney">
+            <div class="incomeTopic1">
+                <ul>
+                    <li>当年累计租金收入</li>
+                    <li>当年累计管理收入</li>
+                    <li>当年累计租金收入</li>
+                </ul>
+            </div>
+            <div class="incomeTopic2">
+                <ul>
+                    <li>当月租金收入</li>
+                    <li>当月管理收入</li>
+                    <li>当月租金收入</li>
+                </ul>
+            </div>
+            <div class="incomeNum1">
+                <ul>
+                    <li>05698</li>
+                    <li>00000</li>
+                    <li>05698</li>
+                </ul>
+            </div>
+            <div class="incomeNum2">
+                <ul>
+                    <li>00390</li>
+                    <li>77723</li>
+                    <li>00390</li>
+                </ul>
+            </div>
+        </div>
+        <div class="incomeList">
+            <div class="zoneName">
+            </div>
+        </div>
+        <div class="incomeList-2">
+            <div class="zoneName-2">
+            </div>
+        </div>
+    </div>
+    <!-- 收入指标结束 -->
+
+    <!-- 省地图开始 -->
+    <!-- 广西省地图 -->
+    <div class="guangxiContainer province" style="display: none;">
+        <div class="guangxiMap">
+                <div class="baise">百色市</div>
+                <div class="hechi">河池市</div>
+                <div class="liuzhou">柳州市</div>
+                <div class="guilin">桂林市</div>
+                <div class="chongzuo">崇左市</div>
+                <div class="nanning">南宁市</div>
+                <div class="laibin">来宾市</div>
+                <div class="hezhou">贺州市</div>
+                <div class="fangcheng">防城市</div>
+                <div class="qinzhou">钦州市</div>
+                <div class="guigang">贵港市</div>
+                <div class="wuzhou">梧州市</div>
+                <div class="beihai">北海市</div>
+                <div class="yulin-gx">玉林市</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 福建省地图 -->
+    <div class="fujianContainer province"  style="display: none;">
+        <div class="fujianMap">
+                <div class="longyan">龙岩</div>
+                <div class="sanming">三明</div>
+                <div class="nanping">南平</div>
+                <div class="zhangzhou">漳州</div>
+                <div class="xiamen">厦门</div>
+                <div class="quanzhou">泉州</div>
+                <div class="putian">莆田</div>
+                <div class="fuzhou">福州</div>
+                <div class="ningde">宁德</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 重庆市地图 -->
+    <div class="chongqingContainer province" style="display: none;">
+        <div class="chongqingMap">
+                <div class="jiangBei">江北区</div>
+                <div class="jiuLong">九龙坡区</div>
+                <div class="shaPin">沙坪坝区</div>
+                <div class="yuBei">渝北区</div>
+                <div class="chengkou">城口</div>
+                <div class="wuxi-cq">巫溪</div>
+                <div class="wushan">巫山</div>
+                <div class="kaixian">开县</div>
+                <div class="yunyang">云阳</div>
+                <div class="fengjie">奉节</div>
+                <div class="wanzhou">万州</div>
+                <div class="liangping">梁平</div>
+                <div class="zhongxian">忠县</div>
+                <div class="shizhu">石柱</div>
+                <div class="dianjiang">垫江</div>
+                <div class="fengdu">丰都</div>
+                <div class="pengshui">彭水</div>
+                <div class="qianjiang">黔江</div>
+                <div class="youyang">酉阳</div>
+                <div class="xiushan">秀山</div>
+                <div class="changshou">长寿</div>
+                <div class="peiling">涪陵</div>
+                <div class="wulong">武隆</div>
+                <!-- <div class="yubei">渝北</div> -->
+                <div class="nanchuan">南川</div>
+                <div class="hechuan">合川</div>
+                <div class="beibei">北碚</div>
+                <!-- <div class="shiqu">市区</div> -->
+                <div class="banan">巴南</div>
+                <div class="qijiang">綦江</div>
+                <div class="wansheng">万盛</div>
+                <div class="tongguan">潼关</div>
+                <div class="tongliang">铜梁</div>
+                <div class="bishan">璧山</div>
+                <div class="jiangjin">江津</div>
+                <div class="dazu">大足</div>
+                <div class="yongchuan">永川</div>
+                <div class="rongchang">荣昌</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+    
+    <!-- 湖北省地图 -->
+    <div class="hubeiContainer province"  style="display: none;">
+        <div class="hubeiMap">
+                <div class="shiyan">十堰市</div>
+                <div class="shenlong">神龙架</div>
+                <div class="xiangfan">襄樊市</div>
+                <div class="enshi">恩施市</div>
+                <div class="yichang">宜昌市</div>
+                <div class="jingmen">荆门市</div>
+                <div class="suizhou">随州市</div>
+                <div class="jingzhou">荆州市</div>
+                <div class="qianjiangshi">潜江市</div>
+                <div class="tianmen">天门市</div>
+                <div class="xiaogan">孝感市</div>
+                <div class="xiantao">仙桃市</div>
+                <div class="wuhan">武汉市</div>
+                <div class="xianning">咸宁市</div>
+                <div class="ezhou">鄂州市</div>
+                <div class="huanggang">黄冈市</div>
+                <div class="huangshi">黄石市</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 江苏省地图 -->
+    <div class="jiangsuContainer province" style="display: none;">
+        <div class="jiangsuMap">
+                <div class="xuzhou">徐州</div>
+                <div class="lianyun">连云港</div>
+                <div class="suqian">宿迁</div>
+                <div class="huaian">淮安</div>
+                <div class="yancheng">盐城</div>
+                <div class="yangzhou">扬州</div>
+                <div class="nanjing">南京</div>
+                <div class="zhengjiang">镇江</div>
+                <div class="taizhou-js">泰州</div>
+                <div class="nantong">南通</div>
+                <div class="changzhou">常州</div>
+                <div class="wuxi">无锡</div>
+                <div class="suzhou-js">苏州</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 天津市地图 -->
+    <div class="tianjinContainer province" style="display: none;">
+        <div class="tianjinMap">
+                <div class="jiXian">蓟县</div>
+                <div class="baoDi">宝坻区</div>
+                <div class="wuQing">武清区</div>
+                <div class="ningHe">宁河区</div>
+                <div class="beiChen">北辰区</div>
+                <div class="hanGu">汉沽区</div>
+                <div class="dongLi">东丽区</div>
+                <div class="tianJinShi">天津市</div>
+                <div class="xiQing">西青区</div>
+                <div class="jinNan">津南区</div>
+                <div class="jingHai">静海县</div>
+                <div class="daGang">大港区</div>
+                <div class="tangGu">塘沽区</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 上海市地图 -->
+    <div class="shanghaiContainer province" style="display: none;">
+        <div class="shanghaiMap">
+                <div class="chongming">崇明县</div>
+                <div class="baoshan2">宝山区</div>
+                <div class="yangPu">杨浦区</div>
+                <div class="zhaBei">闸北区</div>
+                <div class="hongKou">虹口区</div>
+                <div class="huangPuQu">黄浦区</div>
+                <div class="puTuo">普陀区</div>
+                <div class="jinAn-sh">静安区</div>
+                <div class="pudong">浦东新区</div>
+                <div class="changNing">长宁区</div>
+                <div class="luWan">卢湾区</div>
+                <div class="xuhui-sh">徐汇区</div>
+                <div class="jiading">嘉定区</div>
+                <div class="qingpu">青浦区</div>
+                <div class="songjiang">松江区</div>
+                <div class="minhang">闵行区</div>
+                <div class="fengxian">奉贤区</div>
+                <div class="jinshan">金山区</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 北京市地图 -->
+    <div class="beijingContainer province"  style="display: none;">
+        <div class="beijingMap">
+                <div class="huaiRou">怀柔区</div>
+                <div class="yanQing">延庆县</div>
+                <div class="miYun">密云区</div>
+                <div class="changPing">昌平区</div>
+                <div class="shunYi">顺义区</div>
+                <div class="pingGu">平谷区</div>
+                <div class="menTou">门头沟区</div>
+                <div class="haiDin">海淀区</div>
+                <div class="chaoYang">朝阳区</div>
+                <div class="shiJing">石景山</div>
+                <div class="chengQu1">东城区</div>
+                <div class="chengQu2">西城区</div>
+                <div class="fengTai">丰台区</div>
+                <div class="fangShan">房山区</div>
+                <div class="daXing">大兴区</div>
+                <div class="tongZhou">通州区</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 浙江省地图 -->
+    <div class="zhejiangContainer province" style="display: none;">
+        <div class="zhejiangMap"> 
+                <div class="huzhou">湖州市</div>
+                <div class="jiaxing">嘉兴市</div>
+                <div class="hangzhou">杭州市</div>
+                <div class="shaoxing">绍兴市</div>
+                <div class="ningbo">宁波市</div>
+                <div class="zhoushan">舟山市</div>
+                <div class="quzhou">衢州市</div>
+                <div class="jinhua">金华市</div>
+                <div class="taizhou">台州市</div>
+                <div class="lishui">丽水市</div>
+                <div class="wenzhou">温州市</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 山东省地图 -->
+    <div class="shandongContainer province"  style="display: none;">
+        <div class="shandongMap">
+                <div class="liaocheng">聊城</div>
+                <div class="dezhou">德州</div>
+                <div class="heze">菏泽</div>
+                <div class="jinan">济南</div>
+                <div class="binzhou">滨州</div>
+                <div class="jining">济宁</div>
+                <div class="taian">泰安</div>
+                <div class="laiwu">莱芜</div>
+                <div class="zibo">淄博</div>
+                <div class="dongying">东营</div>
+                <div class="zaozhuang">枣庄</div>
+                <div class="linyi">临沂</div>
+                <div class="weifang">潍坊</div>
+                <div class="rzhao">日照</div>
+                <div class="qingdao">青岛</div>
+                <div class="yantai">烟台</div>
+                <div class="weihai">威海</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 四川省地图 -->
+    <div class="sichuanContainer province" style="display: none;">
+        <div class="sichuanMap">
+                <div class="ganzi">甘孜</div>
+                <div class="aba">阿坝</div>
+                <div class="panzhi">攀枝花</div>
+                <div class="liangshan">凉山</div>
+                <div class="yaan">雅安</div>
+                <div class="chengdu">成都</div>
+                <div class="deyang">德阳</div>
+                <div class="mianyang">绵阳</div>
+                <div class="guangyuan">广元</div>
+                <div class="leshan">乐山</div>
+                <div class="meishan">眉山</div>
+                <div class="yibin">宜宾</div>
+                <div class="zigong">自贡</div>
+                <div class="neijiang">内江</div>
+                <div class="ziyang">资阳</div>
+                <div class="suining">遂宁</div>
+                <div class="nanchong">南充</div>
+                <div class="bazhong">巴中</div>
+                <div class="luzhou">泸州</div>
+                <div class="guangan">广安</div>
+                <div class="dazhou">达州</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 陕西省地图 -->
+    <div class="shanxi1Container province" style="display: none;">
+        <div class="shanxi1Map">
+                <div class="yulin">榆林</div>
+                <div class="yanan">延安</div>
+                <div class="tongchuan">铜川</div>
+                <div class="weinan">渭南</div>
+                <div class="xianyang">咸阳</div>
+                <div class="baoji">宝鸡</div>
+                <div class="xian">西安</div>
+                <div class="shangluo">商洛</div>
+                <div class="hanzhong">汉中</div>
+                <div class="ankang">安康</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 安徽省地图 -->
+    <div class="anhuiContainer province" style="display: none;">
+        <div class="anhuiMap">
+                <div class="huaibei">淮北</div>
+                <div class="bozhou">亳州</div>
+                <div class="suzhou">宿州</div>
+                <div class="bengbu">蚌埠</div>
+                <div class="fuyang">阜阳</div>
+                <div class="huainan">淮南</div>
+                <div class="luan">六安</div>
+                <div class="hefei">合肥</div>
+                <div class="chuzhou">滁州</div>
+                <div class="anqing">安庆</div>
+                <div class="chaohu">巢湖</div>
+                <div class="chizhou">池州</div>
+                <div class="tongling">铜陵</div>
+                <div class="wuhu">芜湖</div>
+                <div class="maanshan">马鞍山</div>
+                <div class="huangshan">黄山</div>
+                <div class="xuancheng">宣城</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 河北省地图 --> 
+    <div class="hebeiContainer province" style="display: none;">
+        <div class="hebeiMap">
+                <div class="chengde">承德市</div>
+                <div class="zhangjiakou">张家口</div>
+                <div class="beijing2">北京</div>
+                <div class="qinhuang">秦皇岛</div>
+                <div class="baoding">保定</div>
+                <div class="langfang">廊坊</div>
+                <div class="tianjing2">天津</div>
+                <div class="tangshan-hb">唐山</div>
+                <div class="shijiazhuang">石家庄</div>
+                <div class="hengshui">衡水</div>
+                <div class="xingtai">邢台</div>
+                <div class="handan">邯郸</div>
+                <div class="cangzhou-hb">沧州</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 河南省地图 -->
+    <div class="henanContainer province"  style="display: none;">
+        <div class="henanMap">
+                <div class="anyang">安阳</div>
+                <div class="hebi">鹤壁</div>
+                <div class="puyang">濮阳</div>
+                <div class="xinxiang">新乡</div>
+                <div class="jiyuan">济源</div>
+                <div class="jiaozuo">焦作</div>
+                <div class="sanmenxia">三门峡</div>
+                <div class="luoyang">洛阳</div>
+                <div class="zhengzhou">郑州</div>
+                <div class="shangqiu">商丘</div>
+                <div class="pingding">平顶山</div>
+                <div class="xuchang">许昌</div>
+                <div class="nanyang">南阳</div>
+                <div class="zhoukou">周口</div>
+                <div class="zhuma">驻马店</div>
+                <div class="xinyang">信阳</div>
+                <div class="kaifeng">开封</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 广东省地图 -->
+    <div class="guangdongContainer province"  style="display: none;">
+        <div class="guangdongMap">
+                <div class="zhanjiang">湛江市</div>
+                <div class="maoming">茂名市</div>
+                <div class="yunfu">云浮市</div>
+                <div class="zhaoqing">肇庆市</div>
+                <div class="qingyuan">清远市</div>
+                <div class="shaoguan">韶关市</div>
+                <div class="yangjiang">阳江市</div>
+                <div class="jiangmen">江门市</div>
+                <div class="zhongshan">中山市</div>
+                <div class="zhuhai">珠海市</div>
+                <div class="foushan">佛山市</div>
+                <div class="guangzhou">广州市</div>
+                <div class="heyuan">河源市</div>
+                <div class="dongguan">东莞市</div>
+                <div class="huizhou">惠州市</div>
+                <div class="meizhou">梅州市</div>
+                <div class="shenzheng">深圳市</div>
+                <div class="jieyang">揭阳市</div>
+                <div class="shanwei">汕尾市</div>
+        </div>
+        <div class="back-China"></div>
+    </div>
+
+    <!-- 省地图结束 -->
+
+    <!-- 市地图开始 -->
+
+    <!-- 南宁市地图 -->
+    <div class="nanningContainer city" style="display: none;">
+        <div class="nanningMap">
+                <div class="mashan">马山县</div>
+                <div class="longan">隆安县</div>
+                <div class="wuming">武鸣区</div>
+                <div class="shanglin">上林县</div>
+                <div class="xixiang">西乡塘区</div>
+                <div class="xingning">兴宁区</div>
+                <div class="binyang">宾阳县</div>
+                <div class="jiangnan">江南区</div>
+                <div class="qingxiu">青秀区</div>
+                <div class="liangqing">良庆区</div>
+                <div class="yongning">邕宁区</div>
+                <div class="hengxian">横县</div>
+        </div>
+        <div class="back-Guangxi"></div>
+    </div>
+
+    <!-- 厦门市地图 -->
+    <div class="xiamenContainer city"  style="display: none;">
+        <div class="xiamenMap">
+                <div class="tongAn">同安区</div>
+                <div class="jiMei">集美区</div>
+                <div class="haiCang">海沧区</div>
+                <div class="xiangAn">翔安区</div>
+                <div class="huLi">湖里区</div>
+                <div class="siMing">思明区</div>
+        </div>
+        <div class="back-Fujian"></div>
+    </div>
+
+    <!-- 福州市地图 -->
+    <div class="fuzhouContainer city"  style="display: none;">
+        <div class="fuzhouMap">
+                <div class="mingQin">闽清</div>
+                <div class="yongTai">永泰</div>
+                <div class="mingHou">闽侯县</div>
+                <div class="luoyYuan">罗源</div>
+                <div class="jinAn">晋安</div>
+                <div class="lianJiang">连江</div>
+                <div class="maWei">马尾区</div>
+                <div class="changLe">长乐</div>
+                <div class="fuQing">福清</div>
+                <div class="pinTan">平潭</div>
+        </div>
+        <div class="back-Fujian"></div>
+    </div>
+
+    <!-- 泉州市地图 -->
+    <div class="quanzhouContainer city"  style="display: none;">
+        <div class="quanzhouMap">
+                <div class="deHua">德化县</div>
+                <div class="yongChun">永春县</div>
+                <div class="anXi">安溪县</div>
+                <div class="nanAn">南安县</div>
+                <div class="luoJiang">洛江区</div>
+                <div class="quanGang">泉港区</div>
+                <div class="huiAn">惠安区</div>
+                <div class="liChengQu">鲤城区</div>
+                <div class="fengZe">丰泽区</div>
+                <div class="shiShi">石狮区</div>
+                <div class="jingJiang">晋江区</div>
+                <div class="jinMen">金门县</div>
+        </div>
+        <div class="back-Fujian"></div>
+    </div>
+
+    <!-- 郑州市地图 -->
+    <div class="zhengzhouContainer city" style="display: none;">
+        <div class="zhengzhouMap">
+                <div class="dengFeng">登封市</div>
+                <div class="gongYi">巩义市</div>
+                <div class="xinMi">新密市</div>
+                <div class="shangJie">上街区</div>
+                <div class="xingYang">荥阳市</div>
+                <div class="xinZheng">新郑市</div>
+                <div class="erQi">二七区</div>
+                <div class="jinShui">金水区</div>
+                <div class="zhongYuan">中原区</div>
+                <div class="gaoXin-zz">高新区</div>
+                <div class="huiJi">惠济区</div>
+                <div class="guanCheng">管城区</div>
+                <div class="hangKong">航空港区</div>
+                <div class="zhengDong">郑东新区</div>
+                <div class="zhongMu">中牟县</div>
+        </div>
+        <div class="back-Henan"></div>
+    </div>
+
+    <!-- 唐山市地图 -->
+    <div class="tangshan-hbContainer city"  style="display: none;">
+        <div class="tangshanMap">
+                <div class="zunHua">遵化市</div>
+                <div class="qianXi">迁西县</div>
+                <div class="yuTian">玉田县</div>
+                <div class="fengRun">丰润</div>
+                <div class="qianAn">迁安市</div>
+                <div class="luTai">芦台</div>
+                <div class="luNan">路南区</div>
+                <div class="gaoXinJiShu">高新技术开发区</div>
+                <div class="kaiPing">开平</div>
+                <div class="guzhi">古治</div>
+                <div class="luanXian">滦县</div>
+                <div class="fengNan">丰南</div>
+                <div class="luanNan">滦南</div>
+                <div class="tangHai">唐海</div>
+                <div class="lengTing">乐亭</div>
+        </div>
+        <div class="back-Hebei"></div>
+    </div>
+
+    <!-- 洛阳市地图 -->
+    <div class="luoyangContainer city" style="display: none;">
+        <div class="luoyangMap">
+                <div class="xinAn">新安</div>
+                <div class="mengJin">孟津</div>
+                <div class="jiLi">吉利</div>
+                <div class="huiZu">瀍河回族区</div>
+                <div class="yanShi">偃师</div>
+                <div class="xuanYang">宣阳</div>
+                <div class="yiChuan">伊川</div>
+                <div class="luoNing">洛宁</div>
+                <div class="luanChuan">栾川</div>
+                <div class="songXian">嵩县</div>
+                <div class="ruYang">汝阳</div>
+        </div>
+        <div class="back-Henan"></div>
+    </div>
+
+    <!-- 广州市地图 -->
+    <div class="guangzhouContainer city"  style="display: none;">
+        <div class="guangzhouMap">
+                <div class="congHua">从化区</div>
+                <div class="huaDu">花都区</div>
+                <div class="zengCheng">增城区</div>
+                <div class="baiYun">白云区</div>
+                <div class="huangPuqu">黄浦区</div>
+                <div class="yueXiu">越秀区</div>
+                <div class="tianHe">天河区</div>
+                <div class="liWan">荔湾区</div>
+                <div class="haiZhu">海珠区</div>
+                <div class="fanYu">番禺区</div>
+                <div class="nanSha">南沙区</div>
+        </div>
+        <div class="back-Guangdong"></div>
+    </div>
+
+    <!-- 韶关市地图 -->
+    <div class="shaoguanContainer city"  style="display: none;">
+        <div class="shaoguanMap">
+                <div class="leChang">乐昌市</div>
+                <div class="renHua">仁化县</div>
+                <div class="nanXiong">南雄县</div>
+                <div class="ruYuan">乳源县</div>
+                <div class="zhenJiang">浈江区</div>
+                <div class="shiXing">始兴县</div>
+                <div class="wuJiang">武江区</div>
+                <div class="quJiang">曲江区</div>
+                <div class="wengYuan">翁源县</div>
+                <div class="xinFeng">新丰县</div>
+        </div>
+        <div class="back-Guangdong"></div>
+    </div>
+
+    <!-- 中山市地图 -->
+    <div class="zhongshanContainer city"  style="display: none;">
+        <div class="zhonngshanMap">
+                <div class="guZhen">古镇镇</div>
+                <div class="xiaoLan">小榄镇</div>
+                <div class="dongFeng">东凤镇</div>
+                <div class="nanTou">南头镇</div>
+                <div class="hengLan">横栏镇</div>
+                <div class="fuSha">阜沙镇</div>
+                <div class="huangPu">黄圃镇</div>
+                <div class="daYong">大涌镇</div>
+                <div class="shaXi">沙溪镇</div>
+                <div class="xiQu">西区</div>
+                <div class="sanJiao">三角镇</div>
+                <div class="banFu">板芙区</div>
+                <div class="nanQu">南区</div>
+                <div class="shiQi">石岐区</div>
+                <div class="gangKou">港口镇</div>
+                <div class="mingZhong">民众镇</div>
+                <div class="huoJu">火炬开发区</div>
+                <div class="dongQu">东区</div>
+                <div class="nanLang">南朗镇</div>
+                <div class="wuGui">五桂山镇</div>
+                <div class="sanXiang">三乡镇</div>
+                <div class="shenWan">神湾镇</div>
+                <div class="tanZhou">坦洲镇</div>
+                <div class="tongMao">同茂工业区</div>
+        </div>
+        <div class="back-Guangdong"></div>
+    </div>
+
+    <!-- 杭州市地图 -->
+    <div class="hangzhouContainer city" style="display: none;">
+        <div class="hangzhouMap" >
+                <div class="yuHang">余杭区</div>
+                <div class="shangCheng">上城区</div>
+                <div class="xiaCheng">下城</div>
+                <div class="xiHu">西湖区</div>
+                <div class="xiaoShan">萧山区</div>
+                <div class="linAn">临安市</div>
+                <div class="fuYang">富阳区</div>
+                <div class="tongLu">桐庐区</div>
+                <div class="chunAn">淳安区</div>
+                <div class="jianDe">建德市</div>
+        </div>
+        <div class="back-Zhejiang"></div>
+    </div>
+
+    <!-- 深圳市地图 -->
+    <div class="shenzhengContainer city" style="display: none;" >
+        <div class="shenzhengMap">
+                <div class="baoAn">宝安区</div>
+                <div class="guangMing">光明新区</div>
+                <div class="nanShan">南山区</div>
+                <div class="longHua">龙华区</div>
+                <div class="fuTian">福田区</div>
+                <div class="luoHu">罗湖区</div>
+                <div class="longGang">龙岗区</div>
+                <div class="pingShan-sz">坪山区</div>
+                <div class="daPeng">大鹏新区</div>
+        </div>
+        <div class="back-Guangdong"></div>
+    </div>
+
+    <!-- 石家庄市地图 -->
+    <div class="shijiazhuangContainer city"  style="display: none;">
+        <div class="shijiazhuangMap">
+                <div class="pingShan">平山县</div>
+                <div class="lingShou">灵寿县</div>
+                <div class="xingTang">行唐县</div>
+                <div class="jingXing">井陉县</div>
+                <div class="luQuan">鹿泉区</div>
+                <div class="zhengDing">正定县</div>
+                <div class="xinLe">新乐县</div>
+                <div class="xinHua">新华区</div>
+                <div class="qiaoXi">桥西区</div>
+                <div class="yuHua-sjz">裕华</div>
+                <div class="zangHuang">赞皇县</div>
+                <div class="yuanShi">元氏县</div>
+                <div class="luanCheng-sz">栾城区</div>
+                <div class="yecheng-sz">葉城区</div>
+                <div class="wuJi">无极县</div>
+                <div class="gaoYi">高邑县</div>
+                <div class="zhaoXian">赵县</div>
+                <div class="jinZhou">晋州市</div>
+                <div class="shenZe">深泽县</div>
+                <div class="xinJi">辛集市</div>
+        </div>
+        <div class="back-Hebei"></div>
+    </div>
+
+    <!-- 保定市地图 -->
+    <div class="baodingContainer city" style="display: none;">
+        <div class="baodingMap">
+                <div class="gaoBei">高碑店市</div>
+                <div class="manCheng">满城区</div>
+                <div class="xuShui">徐水区</div>
+                <div class="jingXiu">竞秀区</div>
+                <div class="lianChi">莲池区</div>
+                <div class="qinYuan">清苑区</div>
+        </div>
+        <div class="back-Hebei"></div>
+    </div>
+
+    <!-- 廊坊市地图 -->
+    <div class="langfangContainer city" style="display: none;">
+        <div class="langfangMap">
+                <div class="guAn">固安县</div>
+                <div class="guangYang">广阳区</div>
+                <div class="yongQin">永清县</div>
+                <div class="baZhou">霸州市</div>
+                <div class="wenAn">文安县</div>
+                <div class="daCheng">大城县</div>
+                <div class="anCi">安次区</div>
+                <div class="sanHe">三河市</div>
+                <div class="daChang">大厂回族自治县</div>
+                <div class="xiangHe">香河县</div>
+        </div>
+        <div class="back-Hebei"></div>
+    </div>
+
+   <!-- 张家口市地图 -->
+   <div class="zhangjiakouContainer city" style="display: none;">
+       <div class="zhangjiakouMap">
+               <div class="kangBao">康保县</div>
+               <div class="shangYi">尚义县</div>
+               <div class="zhangBei">张北县</div>
+               <div class="guYuan">沽源县</div>
+               <div class="wanQuan">万全县</div>
+               <div class="qiaoXi">桥西区</div>
+               <div class="chongLi">崇礼区</div>
+               <div class="qiaoDong">桥东区</div>
+               <div class="chiCheng">赤城县</div>
+               <div class="xiaHua">下花园</div>
+               <div class="xuanHua">宣化区</div>
+               <div class="huaiLai">怀来县</div>
+               <div class="zhuLu">逐鹿县</div>
+               <div class="weiXian">蔚县</div>
+               <div class="yangYuan">阳原县</div>
+       </div>
+       <div class="back-Hebei"></div>
+   </div>
+
+    <!-- 沧州市地图 -->
+    <div class="cangzhou-hbContainer city" style="display: none;">
+        <div class="cangzhouMap">
+                <div class="renQiu">任丘市</div>
+                <div class="suNing">肃宁县</div>
+                <div class="heJian">河间</div>
+                <div class="xianXian">献县</div>
+                <div class="boTou">泊头</div>
+                <div class="yunHe">运河区</div>
+                <div class="qingXian">青县</div>
+                <div class="wuQiao">吴桥区</div>
+                <div class="dongGuang">东光县</div>
+                <div class="nanPi">南皮</div>
+                <div class="cangXian">沧县</div>
+                <div class="xinHua-cz">新华区</div>
+                <div class="mengCun">孟村</div>
+                <div class="huangHua">黄骅市</div>
+                <div class="yanShan">盐山</div>
+                <div class="haiXian">海县</div>
+        </div>
+        <div class="back-Hebei"></div>
+    </div>
+
+    <!-- 成都市地图 -->
+    <div class="chengduContainer city" style="display: none;">
+        <div class="chengduMap">
+                <div class="qiongLai">邛崃</div>
+                <div class="puJiang">浦江县</div>
+                <div class="daYi">大邑县</div>
+                <div class="xinJin">新津县</div>
+                <div class="chongZhou">崇州市</div>
+                <div class="duJiangYan">都江堰</div>
+                <div class="wenJiang">温江</div>
+                <div class="shuangLiu">双流县</div>
+                <div class="piXian">郫县</div>
+                <div class="qingYang">青羊</div>
+                <div class="jinNiu">金牛区</div>
+                <div class="wuHou">武侯</div>
+                <div class="chengHua">成华</div>
+                <div class="jinJiang">锦江</div>
+                <div class="pengZhou">彭州</div>
+                <div class="xinDu">新都县</div>
+                <div class="longQuan">龙泉驿</div>
+                <div class="qinBaiJiang">青白江</div>
+                <div class="jinTangXian">金堂县</div>
+        </div>
+        <div class="back-Sichuan"></div>
+    </div>
+
+    <!-- 合肥市地图 -->
+    <div class="hefeiContainer city" style="display: none;">
+        <div class="hefeiMap">
+                <div class="feiXi">肥西县</div>
+                <div class="shuShan">蜀山区</div>
+                <div class="gaoXin">高新区</div>
+                <div class="panYu-hf">番禺区</div>
+                <div class="binHu">滨湖区</div>
+                <div class="luYang">庐阳区</div>
+                <div class="zhengWu">政务区</div>
+                <div class="baoHe">包河区</div>
+                <div class="yaoHai">瑶海区</div>
+                <div class="changFeng">长丰县</div>
+                <div class="xinZhang">新站区</div>
+                <div class="feiDong">肥东县</div>
+        </div>
+        <div class="back-Anhui"></div>
+    </div>
+
+    <!-- 黄山市地图 -->
+    <div class="huangshanContainer city" style='display: none;'>
+        <div class="huangshanMap">
+            <div class="qiMen">祁门县</div>
+            <div class="yiXian">黟县</div>
+            <div class="huangshanQu">黄山区</div>
+            <div class="xiuNing">休宁区</div>
+            <div class="huiZhou">徽州区</div>
+            <div class="tunXi">屯溪区</div>
+            <div class="sheXian">歙县</div>
+    </div>
+    <div class="back-Anhui"></div>
+    </div>
+    <!-- 济南市地图 -->
+    <div class="jinanContainer city"  style="display: none;">
+        <div class="jinanMap">
+                <div class="pinYing">平阴区</div>
+                <div class="changQing">长清区</div>
+                <div class="huaiYin">槐荫区</div>
+                <div class="shiZhongQu">市中区</div>
+                <div class="liCheng">历城区</div>
+                <div class="tianQiao">天桥区</div>
+                <div class="liXiaQu">历下区</div>
+                <div class="jiYang">济阳县</div>
+                <div class="zhangQiu">章丘区</div>
+                <div class="shangHe">商河县</div>
+        </div>
+        <div class="back-Shandong"></div>
+    </div>
+
+    <!-- 南京市地图 -->
+    <div class="nanjingContainer city" style="display: none;">
+        <div class="nanjingMap" >
+                <div class="liuHe">六合区</div>
+                <div class="qiXia">栖霞区</div>
+                <div class="xiaGuan">下关</div>
+                <div class="puKouQu">浦口区</div>
+                <div class="xuanWu">玄武区</div>
+                <div class="jianYe">建邺</div>
+                <div class="qinHuai">秦淮</div>
+                <div class="yuHua">雨花台</div>
+                <div class="jiangNing">江宁区</div>
+                <div class="liShui">溧水县</div>
+                <div class="gaoChunXian">高淳区</div>
+            </div>
+        <div class="back-Jiangsu"></div>
+    </div>
+
+
+    <!-- 泰州市地图 -->
+    <div class="taizhou-jsContainer city" style="display: none;">
+        <div class="taizhouMap">
+                <div class="xingHua">兴化市</div>
+                <div class="jiangYan">姜堰区</div>
+                <!-- <div class="shiQu-taizhou">市区</div> -->
+                <div class="haiLing">海陵区</div>
+                <div class="gaoGang">高港区</div>              
+                <div class="taiXing">泰兴市</div>
+                <div class="jingJiang-taizhou">靖江市</div>
+        </div>
+        <div class="back-Jiangsu"></div>
+    </div>
+
+    <!-- 无锡市地图 -->
+    <div class="wuxiContainer city" style="display: none;">
+        <div class="wuxiMap">
+                <div class="huiShan">惠山区</div>
+                <div class="xiShan">锡山区</div>
+                <div class="liangXi">梁溪区</div>
+                <div class="xinWu">新吴区</div>
+                <div class="xinQu">新区</div>
+                <div class="binHuQu-wuxi">滨湖区</div>
+        </div>
+        <div class="back-Jiangsu"></div>
+    </div>
+
+    <!-- 武汉市地图 -->
+    <div class="wuhanContainer city" style="display: none;">
+        <div class="wuhanMap">
+                <div class="huangPi">黄陂区</div>
+                <div class="xinZhou">新洲区</div>
+                <div class="dongXi">东西湖区</div>
+                <div class="jiangAn">江岸区</div>
+                <div class="qingShan">青山区</div>
+                <div class="jiangHan">江汉区</div>
+                <div class="qiaoKou">硚口</div>
+                <div class="hanYang">汉阳</div>
+                <div class="wuChang">武昌</div>
+                <div class="hongShan">洪山</div>
+                <div class="caiDian">蔡甸区</div>
+                <div class="jiangXia">江夏区</div>
+                <div class="hanNan">汉南区</div>
+        </div>
+        <div class="back-Hubei"></div>
+    </div>
+
+    <!-- 西安市地图 -->
+    <div class="xianContainer city" style="display: none;">
+        <div class="xianMap">
+                <div class="zhouZhi">周至县</div>
+                <div class="huXian">户县</div>
+                <div class="changAn">长安区</div>
+                <div class="lanTian">蓝田县</div>
+                <div class="weiYang">未央区</div>
+                <div class="beiLin">碑林区</div>
+                <div class="yanTa">雁塔区</div>
+                <div class="linTong">临潼区</div>
+                <div class="gaoLing">高陵区</div>
+                <div class="yanLiang">阎良区</div>
+        </div>
+        <div class="back-Shaxi"></div>
+    </div>
+
+    <!-- 市地图结束 -->
+
+    <!-- 省市页面结束 -->
+
+    <!-- 百度地图 -->
+    <div id="baidu" style="display: none;">
+        <div id="baiduContainer"></div>
+        <div class="baidu-back"></div>
+    </div>
+
+    <!-- 区项目页面开始 -->
+
+    <!-- 房源信息开始 -->
+
+    <div class="houseResource" style="display: none;">
+        <div class="houseResourceNum1">00090</div>
+        <div class="houseResourceNum2">00080</div>
+        <div class="houseResourceNum3">00050</div>
+        <div class="houseResourceNum4">88888</div>
+    </div>
+    <!-- 房源信息结束 -->
+
+    <!-- 出租率开始 -->
+    
+    <div class="rentRate" style="display: none;">
+        <div class="rentRateTimer1"></div>
+        <div class="rentRateHand1"></div>
+        <div class="rentRatePercent1">50%</div>
+        <div class="rentRateTimer2"></div>
+        <div class="rentRateHand2"></div>
+        <div class="rentRatePercent2">88%</div>
+    </div>
+    <!-- 出租率结束 -->
+
+
+    <!-- 项目简介开始 -->
+
+    <div class="programIntroduction" style="display: none;">
+       <div class="projectContainer">
+           <div class="projectOneContainer">
+                <div class="projectOne">
+                    <div class="cursorTop1"></div>
+                    <div class="cursorLeft1"></div>
+                    <div class="cursorBottom1"></div>
+                    <div class="cursorRight1"></div>
+                        
+                </div>
+           </div>
+           <div class="projectSecondContainer">
+                <div class="projectSecond">
+                    <div class="cursorTop1"></div>
+                    <div class="cursorLeft1"></div>
+                    <div class="cursorBottom1"></div>
+                    <div class="cursorRight1"></div>
+                </div>
+           </div>
+           <div class="projectThirdContainer">
+                <div class="projectThird">
+                    <div class="cursorTop1"></div>
+                    <div class="cursorLeft1"></div>
+                    <div class="cursorBottom1"></div>
+                    <div class="cursorRight1"></div>
+                </div>
+           </div>
+           <div class="projectFourthContainer">
+                <div class="projectFourth">
+                    <div class="cursorTop1"></div>
+                    <div class="cursorLeft1"></div>
+                    <div class="cursorBottom1"></div>
+                    <div class="cursorRight1"></div>
+                </div>
+           </div>
+       </div> 
+       <div class="projectOverview">
+           <div class="projectName">CCB建融家园—青年公寓项目</div>
+           <div class="projectAddress">北京市大兴区西局南街139号</div>
+           <div class="projectArea">525.00平方米</div>
+           <div class="projectHomeQuality">普通住宅</div>
+           <div class="projectLandQuality">国有土地</div>
+           <div class="projectUse">住宅用地</div>
+           <div class="projectOperation">未确定</div>
+       </div>
+    </div>
+
+    <!-- 项目简介结束 -->
+
+    <!-- 区项目页面开始 -->
+
+</body>
+</html>
