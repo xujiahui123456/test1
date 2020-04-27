@@ -18,7 +18,7 @@ img {
 }
 a {
     text-decoration: none;  /* 去除a链接的下划线 */
-}
+} 
 input,button {
     border: 0;   /* 去除边框 */
     outline: 0;  /* 取消轮廓边框 */
